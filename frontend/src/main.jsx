@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 
 
-export const serverUrl="http://localhost:4000"
+
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <App />
