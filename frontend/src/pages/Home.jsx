@@ -17,7 +17,7 @@ const Home = () => {
  const getdata = async () => {
   try {   
     setLoading(true)
-    const response = await axios.get(`https://basic-regis-app-fb-api.vercel.app/users`)
+    const response = await axios.get(`https://basic-regis-app-fb-server.vercel.app/users`)
     
     // Check if response.data exists and is an array
     if (Array.isArray(response.data)) {
