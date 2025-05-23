@@ -10,9 +10,7 @@ const Home = () => {
   const [error, setError] = useState(null)
   const [searchTerm, setSearchTerm] = useState('')
 
-  //    let result =await axios.post(`${serverUrl}/api/auth/login`,{
-  ////  email,password
-        //        },{withCredentials:true})
+
 
  const getdata = async () => {
   try {   
