@@ -19,7 +19,7 @@ const Addpeople = ({ refreshUserList }) => {
     e.preventDefault()
     setLoading(true)
     try {
-      await axios.post(`http://localhost:4000/api/v1/createuser`, formData, { withCredentials: true }) // ✅ FIXED
+      await axios.post(`https://basic-regis-app-fb-api.vercel.app/createuser`, formData, { withCredentials: true }) // ✅ FIXED
       setFormData({ name: '', email: '', occupation: '', department: '', role: '' })
       if (refreshUserList) refreshUserList()
       navigate('/')
